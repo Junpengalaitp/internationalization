@@ -13,4 +13,11 @@ public class I18nContent implements Serializable {
     private String en;
 
     private String cn;
+
+    public String getContent(String lang) {
+        if ("cn".equals(lang)) {
+            return cn;
+        }
+        return en;
+    }
 }
